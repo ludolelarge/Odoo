@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<odoo>
+
+        <record model="ir.ui.view" id="view_employee_product_request_form">
+            <field name="name">employee.product.request.form</field>
+            <field name="model">employee.product.request</field>
+            <field name="arch" type="xml">
+                <form string="Product Request">
+                    <header>
+                        <button name="button_draft"
+                                type="object"
+                                attrs="{'invisible': [('state', '!=', 'canceled')]}"
+                                string="Draft" />
+                        <button name="button_confirm"
+                                type="object"
+                                attrs="{'invisible': [('state', 'not in', 'draft')]}"
+                                class="oe_highlight"
+                                string="Confirm" />
+                        <button name="button_cancel"
+                                type="object"
+                                attrs="{'invisible': [('state', 'not in', 'confirm')]}"
+                                string="Cancel" />
+                        <button name="button_stock_picking"
+                                type="object"
+                                attrs="{'invisible': [('state', 'not in', ('confirm'))]}"
+                                string="Stock Picking"
+                                groups="employee_product_request.group_employee_product_request_manager" />
+                        <field name="state"
+                               widget="statusbar"
+                               statusbar_visible="draft,confirm,done,canceled"
+                               statusbar_colors='{"success": "blue", "failed": "red"}' />
+                    </header>
+                <sheet>
+                    <div class="oe_edit_only">
+                        <label for="name" class="oe_inline"/>
+                    </div>
+                    <h1>
+                        <field name="name" readonly="1" class="oe_inline"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="requested_by" />
+                            <field name="requested_department_id" />
+                            <field name="assigned_to" />
+                            <field name="assigned_department_id" />
+                        </group>
+                        <group>
+                            <field name="request_date" />
+                            <field name="delivery_date" />
+                            <field name="picking_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Products">
+							<field name="line_ids" nolabel="1" >
+								<tree string="Product Lines" editable="top" delete="true" create="true">
+									<field name="product_id"/>
+									<field name="product_qty"/>
+									<field name="product_uom_id"/>
+									<field name="analytic_account_id" />									 
+								</tree>
+							</field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                  <field name="message_follower_ids" widget="mail_followers"/>
+                  <field name="message_ids" widget="mail_thread"/>
+                </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_employee_product_request_tree">
+            <field name="name">employee.product.request.tree</field>
+            <field name="model">employee.product.request</field>
+            <field name="arch" type="xml">
+                <tree string="Product Request">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="name"/>
+                    <field name="request_date"/>
+                    <field name="requested_by"/>
+					<field name="delivery_date"/>
+					<field name="assigned_to"/>
+                    <field name="state"/>
+                </tree>
+          </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="employee_product_request_form_action">
+            <field name="name">Product Request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.product.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_requested_by":uid}</field>
+        </record>
+
+        <menuitem
+        	name="Product Request"
+            id="menu_employee_product_request_act"
+            parent="hr.menu_hr_root"
+            action="employee_product_request_form_action" />
+            
+</odoo>

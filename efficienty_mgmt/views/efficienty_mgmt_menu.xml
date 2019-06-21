@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Efficienty Management"
+                  id="efficienty_mgmt_menu"
+                  groups="group_efficienty_mgmt_user"
+                  sequence="40" />      
+    </data>
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_efficienty_mgmt_user,access.efficienty.mgmt.user,efficienty_mgmt.model_efficienty_mgmt,efficienty_mgmt.group_efficienty_mgmt_user,1,1,1,0
+access_efficienty_mgmt_supervisor,access.efficienty.mgmt.supervisor,efficienty_mgmt.model_efficienty_mgmt,efficienty_mgmt.group_efficienty_mgmt_supervisor,1,1,1,0
+access_efficienty_mgmt_manager,access.efficienty.mgmt.manager,efficienty_mgmt.model_efficienty_mgmt,efficienty_mgmt.group_efficienty_mgmt_manager,1,1,1,1
+access_efficienty_mgmt_stage_user,access.efficienty.mgmt.stage.user,efficienty_mgmt.model_efficienty_mgmt_stage,efficienty_mgmt.group_efficienty_mgmt_user,1,0,0,0
+access_efficienty_mgmt_stage_supervisor,access.efficienty.mgmt.stage.supervisor,efficienty_mgmt.model_efficienty_mgmt_stage,efficienty_mgmt.group_efficienty_mgmt_supervisor,1,1,1,0
+access_efficienty_mgmt_stage_manager,access.efficienty.mgmt.stage.manager,efficienty_mgmt.model_efficienty_mgmt_stage,efficienty_mgmt.group_efficienty_mgmt_manager,1,1,1,1

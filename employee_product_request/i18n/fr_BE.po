@@ -1,0 +1,263 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* employee_product_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20181015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-11 06:50+0000\n"
+"PO-Revision-Date: 2018-12-11 06:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: employee_product_request
+#: selection:hr.department,move_type:0
+msgid "All at once"
+msgstr "All at once"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_analytic_account_id
+#: model:ir.model.fields,field_description:employee_product_request.field_hr_department_analytic_account_id
+msgid "Analytic Account"
+msgstr "Compte analytique"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_assigned_department_id
+msgid "Assigned Department"
+msgstr "Département assigné"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_assigned_to
+msgid "Assigned to"
+msgstr "Assigné à"
+
+#. module: employee_product_request
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: employee_product_request
+#: selection:employee.product.request,state:0
+msgid "Canceled"
+msgstr "Annulé"
+
+#. module: employee_product_request
+#: selection:employee.product.request,state:0
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_create_uid
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_create_date
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: employee_product_request
+#: model:ir.model.fields,help:employee_product_request.field_employee_product_request_request_date
+msgid "Date when the user initiated the request."
+msgstr "Date à laquelle l'utilisateur a initié la demande."
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_hr_department_move_type
+msgid "Delivery Type"
+msgstr "Type de livraison"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_delivery_date
+msgid "Delivery date"
+msgstr "Date de livraison"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_name
+msgid "Description"
+msgstr "Description"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_display_name
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: employee_product_request
+#: selection:employee.product.request,state:0
+msgid "Done"
+msgstr "Fait"
+
+#. module: employee_product_request
+#: selection:employee.product.request,state:0
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: employee_product_request
+#: model:ir.model,name:employee_product_request.model_employee_product_request
+#: model:ir.module.category,name:employee_product_request.module_category_employee_product_request
+msgid "Employee Product Request"
+msgstr "Employé Demande de produit"
+
+#. module: employee_product_request
+#: model:ir.model,name:employee_product_request.model_employee_product_request_line
+msgid "Employee Product Request Line"
+msgstr "Employee Product Request Line"
+
+#. module: employee_product_request
+#: model:ir.model,name:employee_product_request.model_hr_department
+msgid "Hr Department"
+msgstr "Département RH"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_id
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request___last_update
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_write_uid
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_write_uid
+msgid "Last Updated by"
+msgstr "Derniere fois mis à jour par"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_write_date
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_write_date
+msgid "Last Updated on"
+msgstr "Dernière mis à jour le"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_hr_department_location_id
+msgid "Location"
+msgstr "Emplacement d'origine"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_hr_department_location_dest_id
+msgid "Location Destination"
+msgstr "Emplacement de destination"
+
+#. module: employee_product_request
+#: model:res.groups,name:employee_product_request.group_employee_product_request_manager
+msgid "Manager"
+msgstr "Gestionnaire"
+
+#. module: employee_product_request
+#: code:addons/employee_product_request/models/employee_product_request.py:25
+#: code:addons/employee_product_request/models/employee_product_request.py:99
+#: code:addons/employee_product_request/models/employee_product_request.py:101
+#: code:addons/employee_product_request/models/employee_product_request.py:103
+#, python-format
+msgid "New"
+msgstr "Nouveau"
+
+#. module: employee_product_request
+#: selection:hr.department,move_type:0
+msgid "Partial"
+msgstr "Partiel"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_picking_id
+msgid "Picking"
+msgstr "Opération de manutention"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_hr_department_picking_type_id
+msgid "Picking Type"
+msgstr "Type de préparation"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_product_id
+msgid "Product"
+msgstr "Article"
+
+#. module: employee_product_request
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Product Lines"
+msgstr "Product Lines"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_name
+msgid "Product Order Reference"
+msgstr "Référence de commande de produit"
+
+#. module: employee_product_request
+#: model:ir.actions.act_window,name:employee_product_request.employee_product_request_form_action
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_request_id
+#: model:ir.ui.menu,name:employee_product_request.menu_employee_product_request_act
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_tree
+msgid "Product Request"
+msgstr "Demande d'articles"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_product_uom_id
+msgid "Product Unit of Measure"
+msgstr "Unité de mesure d'article"
+
+#. module: employee_product_request
+#: code:addons/employee_product_request/models/employee_product_request.py:128
+#: code:addons/employee_product_request/models/employee_product_request.py:170
+#, python-format
+msgid "Product not set."
+msgstr "Article non défini."
+
+#. module: employee_product_request
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Products"
+msgstr "Articles"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_ids
+msgid "Products to Request"
+msgstr "Produits à demander"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_line_product_qty
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_request_date
+msgid "Request date"
+msgstr "Date de la demande"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_requested_department_id
+msgid "Requested Department"
+msgstr "Département demandeur"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_requested_by
+msgid "Requested by"
+msgstr "Demandé par"
+
+#. module: employee_product_request
+#: model:ir.model.fields,field_description:employee_product_request.field_employee_product_request_state
+msgid "Status"
+msgstr "Statut"
+
+#. module: employee_product_request
+#: model:ir.ui.view,arch_db:employee_product_request.view_employee_product_request_form
+msgid "Stock Picking"
+msgstr "Stock Picking"
+
+#. module: employee_product_request
+#: model:res.groups,name:employee_product_request.group_employee_product_request_user
+msgid "User"
+msgstr "Utilisateur"
+

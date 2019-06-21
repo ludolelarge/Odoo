@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+	<!-- hr.department -->
+	<record id="view_department_form" model="ir.ui.view">
+		<field name="name">hr.department.form</field>
+		<field name="model">hr.department</field>
+		<field name="inherit_id" ref="hr.view_department_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//sheet" position="inside">
+				<group string="employee product request configuration" name="employee_product_request">
+					<field name="location_id" />
+					<field name="location_dest_id" />
+					<field name="move_type" />
+					<field name="picking_type_id" />
+					<field name="analytic_account_id" />  
+				</group>           	
+			</xpath>
+		</field>
+	</record>        
+</odoo>
