@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_truck_mgmt_user,access.truck.mgmt.user,truck_mgmt.model_truck_mgmt,truck_mgmt.group_truck_mgmt_user,1,1,1,0
+access_truck_mgmt_supervisor,access.truck.mgmt.supervisor,truck_mgmt.model_truck_mgmt,truck_mgmt.group_truck_mgmt_supervisor,1,1,1,0
+access_truck_mgmt_manager,access.truck.mgmt.manager,truck_mgmt.model_truck_mgmt,truck_mgmt.group_truck_mgmt_manager,1,1,1,1
+
+access_truck_mgmt_stage_user,access.truck.mgmt.stage.user,truck_mgmt.model_truck_mgmt_stage,truck_mgmt.group_truck_mgmt_user,1,0,0,0
+access_truck_mgmt_stage_supervisor,access.truck.mgmt.stage.supervisor,truck_mgmt.model_truck_mgmt_stage,truck_mgmt.group_truck_mgmt_supervisor,1,1,1,0
+access_truck_mgmt_stage_manager,access.truck.mgmt.stage.manager,truck_mgmt.model_truck_mgmt_stage,truck_mgmt.group_truck_mgmt_manager,1,1,1,1
+
+access_truck_mgmt_loading_user,access.truck.mgmt.loading.user,truck_mgmt.model_truck_mgmt_loading_line,truck_mgmt.group_truck_mgmt_user,1,0,0,0
+access_truck_mgmt_loading_supervisor,access.truck.mgmt.loading.supervisor,truck_mgmt.model_truck_mgmt_loading_line,truck_mgmt.group_truck_mgmt_supervisor,1,1,1,0
+access_truck_mgmt_loading_manager,access.truck.mgmt.loading.manager,truck_mgmt.model_truck_mgmt_loading_line,truck_mgmt.group_truck_mgmt_manager,1,1,1,1
+
+access_truck_mgmt_access_user,access.truck.mgmt.access.user,truck_mgmt.model_truck_mgmt_access,truck_mgmt.group_truck_mgmt_user,1,0,0,0
+access_truck_mgmt_access_supervisor,access.truck.mgmt.access.supervisor,truck_mgmt.model_truck_mgmt_access,truck_mgmt.group_truck_mgmt_supervisor,1,0,0,0
+access_truck_mgmt_access_manager,access.truck.mgmt.access.manager,truck_mgmt.model_truck_mgmt_access,truck_mgmt.group_truck_mgmt_manager,1,1,1,1

@@ -1,0 +1,583 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* truck_mgmt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20181015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-06 07:10+0000\n"
+"PO-Revision-Date: 2018-11-06 07:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_id_8272
+msgid "Access"
+msgstr "Accès"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_active
+msgid "Active"
+msgstr "Actif"
+
+#. module: truck_mgmt
+#: model:truck.mgmt.stage,name:truck_mgmt.stage_4
+msgid "Archive"
+msgstr "Archive"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Autres"
+msgstr "Autres"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt.access,type:0
+msgid "Badge"
+msgstr "Badge"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,kanban_state:0
+msgid "Blocked"
+msgstr "Bloqué"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Bocq"
+msgstr "Bocq"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Bois"
+msgstr "Bois"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,state:0
+msgid "Canceled"
+msgstr "Annulé"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Cantine"
+msgstr "Cantine"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_carrier
+msgid "Carrier"
+msgstr "Transporteur"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt.access,type:0
+msgid "Carte"
+msgstr "Carte"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Chargement"
+msgstr "Chargement"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_cleanness
+msgid "Cleanness"
+msgstr "Propreté"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_color
+msgid "Color Index"
+msgstr "Couleur"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_commodity
+msgid "Commodity"
+msgstr "Marchandises"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+#: selection:truck.mgmt,state:0
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_contact_id
+msgid "Contact"
+msgstr "Contact"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_create_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_create_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_create_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_owner_user_id
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_create_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_create_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_create_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_date
+msgid "Date"
+msgstr "Date "
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_view_kanban
+msgid "Delete"
+msgstr "Supprimer"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_delivery_num
+msgid "Delivery Number"
+msgstr "N° de livraison"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_display_name
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_display_name
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_display_name
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_dock
+msgid "Dock"
+msgstr "Quai"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,dock:0
+msgid "Dock 1"
+msgstr "Quai 1"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,dock:0
+msgid "Dock 2"
+msgstr "Quai 2"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,dock:0
+msgid "Dock 3"
+msgstr "Quai 3"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,dock:0
+msgid "Dock 4"
+msgstr "Quai 4"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,dock:0
+msgid "Dock 5"
+msgstr "Quai 5"
+
+#. module: truck_mgmt
+#: model:truck.mgmt.stage,name:truck_mgmt.stage_3
+msgid "Done"
+msgstr "Fait"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+#: selection:truck.mgmt,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_driver_ref
+msgid "Driver Reference"
+msgstr "Référence chauffeur"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_view_kanban
+msgid "Edit..."
+msgstr "Modifier…"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,packaging:0
+msgid "Emballage"
+msgstr "Emballage"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Ferrero"
+msgstr "Ferrero"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_fold
+msgid "Folded in Maintenance Pipe"
+msgstr "Plié dans le flux de maintenance"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,priority:0
+msgid "High"
+msgstr "Haute"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_humidity
+msgid "Humidity"
+msgstr "Taux d'humidité"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_id
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_id
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_id
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_id
+msgid "ID"
+msgstr "ID"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,kanban_state:0
+#: model:truck.mgmt.stage,name:truck_mgmt.stage_1
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_inlet
+msgid "Inlet"
+msgstr "Entrée"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_instructor_id
+msgid "Instructor"
+msgstr "Moniteur"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_kanban_state
+msgid "Kanban State"
+msgstr "État kanban"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt___last_update
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access___last_update
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line___last_update
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage___last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_write_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_write_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_write_uid
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_write_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_write_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_write_date
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_lead_num
+msgid "Lead Number"
+msgstr "Numéro de plomb"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_lead_num_in
+msgid "Lead Number Inlet"
+msgstr "Numéro de plomb Entrée"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_lead_num_out
+msgid "Lead Number Outing"
+msgstr "Numéro de plomb Sortie"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_lines
+msgid "Loading line"
+msgstr "Ligne de chargement"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Loading lines"
+msgstr "Lignes de chargement"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,priority:0
+msgid "Low"
+msgstr "Low"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,packaging:0
+msgid "MF"
+msgstr "MF"
+
+#. module: truck_mgmt
+#: model:res.groups,name:truck_mgmt.group_truck_mgmt_manager
+msgid "Manager"
+msgstr "Gestionnaire"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Mecanique"
+msgstr "Mécanique"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Moniteur"
+msgstr "Moniteur"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_name
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_name
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: truck_mgmt
+#: model:truck.mgmt.stage,name:truck_mgmt.stage_0
+msgid "New Delivery"
+msgstr "Nouvelle livraison"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,priority:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_num
+msgid "Num"
+msgstr "Numéro"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_odour
+msgid "Odour"
+msgstr "Odeur"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Oreal"
+msgstr "Oréal"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_outing
+msgid "Outing"
+msgstr "Sortie"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,packaging:0
+msgid "PF"
+msgstr "PF"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_packaging
+msgid "Packaging"
+msgstr "Conditionnement"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_pallet
+msgid "Pallet"
+msgstr "Palette"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_pastille
+msgid "Pastille"
+msgstr "Pastille"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_pest
+msgid "Pest"
+msgstr "Nuisible"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_priority
+msgid "Priority"
+msgstr "Priorité"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_product_id
+msgid "Product"
+msgstr "Article"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_product_tmpl_id
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_product_qty
+msgid "Quantity To Deliver"
+msgstr "Quantité a livrer"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,kanban_state:0
+msgid "Ready for next stage"
+msgstr "Prêt pour l'étape suivante"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Reception"
+msgstr "Réception"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Reliure"
+msgstr "Reliure"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_done
+msgid "Request Done"
+msgstr "Demande terminée"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,packaging:0
+msgid "SF"
+msgstr "SF"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_section
+msgid "Section"
+msgstr "Section"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Select if ok"
+msgstr "Cocher si OK"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_stage_id_8264
+msgid "Stage"
+msgstr "Étape"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_state
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_state
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_state
+msgid "State"
+msgstr "État"
+
+#. module: truck_mgmt
+#: model:mail.message.subtype,name:truck_mgmt.mt_truck_status
+msgid "Status Changed"
+msgstr "Status modifié"
+
+#. module: truck_mgmt
+#: model:mail.message.subtype,description:truck_mgmt.mt_truck_status
+msgid "Status changed"
+msgstr "Etat modifié"
+
+#. module: truck_mgmt
+#: model:res.groups,name:truck_mgmt.group_truck_mgmt_supervisor
+msgid "Supervisor"
+msgstr "Superviseur"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_partner_id
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_temperature
+msgid "Temperature"
+msgstr "Température"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_time_in
+msgid "Time In"
+msgstr "Heure d'entrée"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_time_out
+msgid "Time out"
+msgstr "Heure de sortie"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_trailer_plate
+msgid "Trailer Plate"
+msgstr "Plaque remorque"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,section:0
+msgid "Travaux Extérieurs"
+msgstr "Travaux Extérieurs"
+
+#. module: truck_mgmt
+#: model:ir.ui.menu,name:truck_mgmt.truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_tree_view
+msgid "Truck"
+msgstr "Camion"
+
+#. module: truck_mgmt
+#: model:ir.ui.menu,name:truck_mgmt.truck_mgmt_access
+msgid "Truck Access"
+msgstr "Accès camion"
+
+#. module: truck_mgmt
+#: model:ir.actions.act_window,name:truck_mgmt.action_truck_mgmt
+#: model:ir.model,name:truck_mgmt.model_truck_mgmt
+#: model:ir.module.category,name:truck_mgmt.module_category_truck_mgmt
+#: model:ir.ui.menu,name:truck_mgmt.truck_mgmt_menu
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_form_view
+msgid "Truck Management"
+msgstr "Gestion camion"
+
+#. module: truck_mgmt
+#: model:ir.actions.act_window,name:truck_mgmt.action_truck_mgmt_access
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_access_form_view
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_access_tree_view
+msgid "Truck Management Access"
+msgstr "Gestion camion accès"
+
+#. module: truck_mgmt
+#: model:ir.model,name:truck_mgmt.model_truck_mgmt_loading_line
+msgid "Truck Management Loading Line"
+msgstr "Gestion camion ligne de chargement"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_loading_line_truckmgmt_id
+msgid "Truck Mgmt"
+msgstr "Truck Mgmt"
+
+#. module: truck_mgmt
+#: model:ir.model,name:truck_mgmt.model_truck_mgmt_access
+msgid "Truck Mgmt Access"
+msgstr "Truck Mgmt Access"
+
+#. module: truck_mgmt
+#: model:ir.model,name:truck_mgmt.model_truck_mgmt_stage
+msgid "Truck Mgmt Stage"
+msgstr "Truck Mgmt Stage"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_truck_plate
+msgid "Truck Plate"
+msgstr "Plaque camion"
+
+#. module: truck_mgmt
+#: model:ir.model.fields,field_description:truck_mgmt.field_truck_mgmt_access_type
+msgid "Type"
+msgstr "Type"
+
+#. module: truck_mgmt
+#: model:ir.ui.view,arch_db:truck_mgmt.truck_mgmt_view_kanban
+msgid "Unread Messages"
+msgstr "Messages non lus"
+
+#. module: truck_mgmt
+#: model:res.groups,name:truck_mgmt.group_truck_mgmt_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: truck_mgmt
+#: selection:truck.mgmt,priority:0
+msgid "Very Low"
+msgstr "Very Low"
+

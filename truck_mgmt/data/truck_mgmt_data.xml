@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+    <!-- Standard stages for Maintenance Request -->
+    <record id="stage_0" model="truck.mgmt.stage">
+        <field name="name">New Delivery</field>
+        <field name="sequence" eval="1" />
+        <field name="fold" eval="False" />
+    </record>
+    <record id="stage_1" model="truck.mgmt.stage">
+        <field name="name">In Progress</field>
+        <field name="sequence" eval="2" />
+        <field name="fold" eval="False" />
+    </record>
+    <record id="stage_3" model="truck.mgmt.stage">
+        <field name="name">Done</field>
+        <field name="sequence" eval="3" />
+        <field name="fold" eval="True" />
+        <field name="done" eval="True" />
+    </record>
+    <record id="stage_4" model="truck.mgmt.stage">
+        <field name="name">Archive</field>
+        <field name="sequence" eval="4" />
+        <field name="fold" eval="True" />
+        <field name="done" eval="True" />
+    </record>
+    
+    <record id="mt_truck_status" model="mail.message.subtype">
+        <field name="name">Status Changed</field>
+        <field name="res_model">truck.mgmt</field>
+        <field name="default" eval="True"/>
+        <field name="description">Status changed</field>
+    </record>
+    
+</data>
+</odoo>

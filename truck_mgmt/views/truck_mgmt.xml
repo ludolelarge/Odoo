@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="truck_mgmt_form_view">
+            <field name="name">truck.mgmt.form</field>
+            <field name="model">truck.mgmt</field>
+            <field name="arch" type="xml">
+                <form string="Truck Management">
+                    <header>
+                        <button name="action_draft"
+                                type="object"
+                                attrs="{'invisible': [('state', '!=', 'canceled')]}"
+                                string="Draft" />
+                        <button name="action_confirm"
+                                type="object"
+                                class="oe_highlight"
+                                state="ready"
+                                string="Confirm" />
+                        <button name="action_cancel"
+                                type="object"
+                                attrs="{'invisible': [('state', 'not in', 'confirm')]}"
+                                string="Cancel" />
+                        <field name="state"
+                               widget="statusbar"
+                               statusbar_visible="draft,confirm,canceled"
+                               statusbar_colors='{"success": "blue", "failed": "red"}' />
+                    </header>
+                    <sheet>
+                    	<group>
+                    		<field name="name"/>
+                    		<field name="date"/>
+                    	</group>
+                    	<notebook>
+                    		<page string="Reception">
+                    			<group>
+                    			    <field name="access_id" context="{'active': True}"/>
+                    				<field name="section"/>
+                    				<field name="time_in"/>
+                    				<field name="truck_plate"/>
+                    				<field name="trailer_plate"/>
+                    				<field name="carrier"/>
+                    				<field name="dock"/>
+                    				<field name="partner_id"/>
+                    				<field name="contact_id"/>
+                    				<field name="commodity"/>
+                    			</group>
+                    		</page>
+                    		<page string="Chargement" groups="truck_mgmt.group_truck_mgmt_supervisor">
+                    			<group>
+                    				<field name="lead_num"/>
+                    				<field name="time_out"/>
+                    				<field name="temperature"/>
+                    				<field name="humidity"/>
+                    				<field name="inlet"/>
+                    				<field name="lead_num_in"/>
+                    				<field name="outing"/>
+                    				<field name="lead_num_out"/>
+                    				<field name="instructor_id"/>
+                    				<field name="packaging"/>
+                    			</group>
+                    			<label for="truck_state" string="Select if ok"/>
+                    			<group>
+                    				<field name="truck_odour"/>
+                    				<field name="truck_state"/>
+                    				<field name="truck_pastille"/>
+                    				<field name="truck_cleanness"/>
+                    				<field name="truck_pest"/>
+                    				<field name="truck_pallet"/>
+                    			</group>
+                    		</page>
+                    		<page string="Moniteur" groups="truck_mgmt.group_truck_mgmt_supervisor">
+                    			<group>
+                    				<field name="driver_ref"/>
+                    				<field name="delivery_num"/>
+                    			</group>
+                    			<group>
+                    			<field name="loading_lines" nolabel="1">
+                                    <tree string="Loading lines" editable="top" delete="true" create="true">
+                                        <field name="state" invisible="1"/>
+                                        <field name="product_id"/>
+                                        <field name="product_qty"/>
+                                    </tree>
+                        		</field>
+                        		</group>
+                    		</page>
+                    	</notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="truck_mgmt_tree_view">
+            <field name="name">truck.mgmt.tree</field>
+            <field name="model">truck.mgmt</field>
+            <field name="arch" type="xml">
+                <tree string="Truck">
+                	<field name="name" />
+                	<field name="section" />
+                    <field name="date" />
+                    <field name="driver_ref" />
+                    <field name="delivery_num" />
+                    <field name="carrier" />
+                    <field name="dock" />
+                </tree>
+            </field>
+        </record>
+ 	
+    	<record id="truck_mgmt_view_calendar" model="ir.ui.view">
+        	<field name="name">truck.mgmt.calendar</field>
+        	<field name="model">truck.mgmt</field>
+        	<field name="arch" type="xml">
+            	<calendar date_start="date" color="section" mode="month">
+            		<field name="name"/>
+                	<field name="carrier"/>
+                	<field name="dock"/>
+                	<field name="contact_id"/>
+            	</calendar>
+        	</field>
+    	</record>
+    	
+    	<record id="truck_mgmt_view_kanban" model="ir.ui.view">
+        <field name="name">truck.mgmt.kanban</field>
+        <field name="model">truck.mgmt</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stage_id">
+               	 	<field name="stage_id"/>
+                	<field name="color"/>
+                	<field name="priority"/>
+                	<field name="name" />
+                    <field name="date" />
+                    <field name="driver_ref" />
+                    <field name="delivery_num" />
+                    <field name="carrier" />
+                    <field name="dock" />
+                    <field name="owner_user_id"/>
+                	<field name="kanban_state"/>
+					<field name="message_needaction_counter"/>
+                <templates>
+                    <t t-name="kanban-tooltip">
+                       <ul class="oe_kanban_tooltip">
+
+                       </ul>
+                    </t>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_card oe_kanban_global_click oe_semantic_html_override">
+                            <div class="o_dropdown_kanban dropdown">
+
+                                <a class="dropdown-toggle btn" data-toggle="dropdown" href="#" >
+                                    <span class="fa fa-bars fa-lg"/>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <t t-if="widget.editable"><li><a type="edit">Edit...</a></li></t>
+                                    <t t-if="widget.deletable"><li><a type="delete">Delete</a></li></t>
+                                    <li><ul class="oe_kanban_colorpicker" data-field="color"/></li>
+                                </ul>
+                            </div>
+                            <div class="oe_kanban_content" tooltip="kanban-tooltip">
+                                <div>
+                                    <b><field name="name"/></b> <br/>
+                                    <span name="owner_user_id" t-if="record.owner_user_id.raw_value"><field name="owner_user_id"/><br/></span>
+                                </div>
+                                <div class="oe_kanban_footer_left" style="margin-top:2px;">
+                                    <t t-if="record.message_needaction_counter.raw_value">
+                                        <span class='oe_kanban_mail_new' title='Unread Messages'><i class='fa fa-comments'/><t t-raw="record.message_needaction_counter.raw_value"/></span>
+                                    </t>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <img t-att-src="kanban_image('res.users', 'image_small', record.owner_user_id.raw_value)" t-att-title="record.owner_user_id.value" width="24" height="24" class="oe_kanban_avatar pull-right"/>
+                                    <div class="pull-left" groups="base.group_user">
+                                        <field name="kanban_state" widget="kanban_state_selection"/>
+                                        <field name="priority" widget="priority"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_clear"></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+   		</record>
+        
+        <record model="ir.ui.view" id="truck_mgmt_access_form_view">
+            <field name="name">truck.mgmt.access.form</field>
+            <field name="model">truck.mgmt.access</field>
+            <field name="arch" type="xml">
+                <form string="Truck Management Access">
+                	<sheet>
+                		<group>
+							<field name="name"/>
+							<field name="num"/>
+							<field name="type"/>
+							<field name="active"/>
+						</group>
+					</sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="truck_mgmt_access_tree_view">
+            <field name="name">truck.mgmt.access.tree</field>
+            <field name="model">truck.mgmt.access</field>
+            <field name="arch" type="xml">
+                <tree string="Truck Management Access">
+					<field name="name"/>
+					<field name="num"/>
+					<field name="type"/>
+					<field name="active"/>
+                </tree>
+            </field>
+        </record>        
+        
+        <record model="ir.actions.act_window" id="action_truck_mgmt">
+            <field name="name">Truck Management</field>
+            <field name="res_model">truck.mgmt</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">calendar,tree,form,kanban</field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_truck_mgmt_access">
+            <field name="name">Truck Management Access</field>
+            <field name="res_model">truck.mgmt.access</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Truck"
+                  parent="truck_mgmt_menu"
+                  id="truck_mgmt"
+                  action="action_truck_mgmt" />
+                  
+        <menuitem name="Truck Access"
+                  parent="truck_mgmt_menu"
+                  id="truck_mgmt_access"
+                  action="action_truck_mgmt_access" />
+ 
+    </data>
+</odoo>

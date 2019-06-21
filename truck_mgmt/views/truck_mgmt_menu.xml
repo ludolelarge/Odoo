@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Truck Management"
+                  id="truck_mgmt_menu"
+                  groups="group_truck_mgmt_user"
+                  sequence="40" />      
+    </data>
+</odoo>
