@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 10.0-20181015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-17 07:03+0000\n"
-"PO-Revision-Date: 2018-05-17 07:03+0000\n"
+"POT-Creation-Date: 2019-07-16 06:58+0000\n"
+"PO-Revision-Date: 2019-07-16 06:58+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -61,13 +61,12 @@ msgid "AMOUNTGL"
 msgstr "AMOUNTGL"
 
 #. module: account_winbooks_export
-#: model:ir.actions.act_window,name:account_winbooks_export.action_account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Accounting Winbooks Export"
 msgstr "Accounting Winbooks Export"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Analytic Entries"
 msgstr "Écritures analytiques"
 
@@ -163,7 +162,7 @@ msgid "CURRCODE"
 msgstr "CURRCODE"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Close"
 msgstr "Fermer"
 
@@ -252,6 +251,11 @@ msgid "End Date"
 msgstr "Date de fin"
 
 #. module: account_winbooks_export
+#: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks_export
+msgid "Export"
+msgstr "Export"
+
+#. module: account_winbooks_export
 #: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_export_filename
 msgid "Export CSV Filename"
 msgstr "Export CSV Nom de fichier"
@@ -298,7 +302,7 @@ msgid "ISPOSITIVE"
 msgstr "ISPOSITIVE"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Invoice Entries"
 msgstr "Invoice Entries"
 
@@ -328,6 +332,11 @@ msgstr "Dernière mise à jour par"
 #: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
+
+#. module: account_winbooks_export
+#: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks_list
+msgid "List"
+msgstr "List"
 
 #. module: account_winbooks_export
 #: code:addons/account_winbooks_export/models/account_winbooks_export.py:102
@@ -386,7 +395,7 @@ msgid "PERIOD"
 msgstr "PERIOD"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Partner Entries"
 msgstr "Partner Entries"
 
@@ -397,7 +406,7 @@ msgid "REMINDLEV"
 msgstr "REMINDLEV"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Report"
 msgstr "Rapport"
 
@@ -468,9 +477,20 @@ msgid "WINBOOKS Export Accounting"
 msgstr "WINBOOKS Export Accounting"
 
 #. module: account_winbooks_export
-#: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks_export
+#: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks
+msgid "Winbooks"
+msgstr "Winbooks"
+
+#. module: account_winbooks_export
+#: model:ir.actions.act_window,name:account_winbooks_export.action_account_winbooks_export
 msgid "Winbooks Export"
 msgstr "Winbooks Export"
+
+#. module: account_winbooks_export
+#: model:ir.actions.act_window,name:account_winbooks_export.action_account_winbooks_list
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_list
+msgid "Winbooks Export List"
+msgstr "Winbooks Export List"
 
 #. module: account_winbooks_export
 #: code:addons/account_winbooks_export/models/account_winbooks_export.py:219
@@ -485,7 +505,7 @@ msgid "ZONANA1"
 msgstr "ZONANA1"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_view
+#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "or"
 msgstr "ou"
 

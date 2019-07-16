@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+    	<menuitem id="menu_account_winbooks" name="Winbooks" parent="account.menu_finance" sequence="6" groups="account.group_account_manager"/>
+
         <menuitem
-            icon="STOCK_EXECUTE"
-            name="Winbooks Export"
-            action="action_account_winbooks_export"
             id="menu_account_winbooks_export"
-            parent="account.menu_finance_reports"
+            name="Export"
+            action="action_account_winbooks_export"
+            parent="menu_account_winbooks"
             sequence="110"
+            />
+            
+        <menuitem
+        	id="menu_account_winbooks_list"
+        	name="List"
+        	action="action_account_winbooks_list"
+        	parent="menu_account_winbooks"
+            sequence="111"
             />
     </data>
 </odoo>
