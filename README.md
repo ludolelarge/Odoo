@@ -1,2 +1,2 @@
 # Odoo
-Odoo custom addons 10.0
+Odoo custom addons 13.0
