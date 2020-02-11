@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Author Ludovic Lelarge
-#    Copyright 2017 www.eta123.be
+#    Copyright 2020 www.eta123.be
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -21,7 +21,7 @@
 
 {
     'name': 'Accounting Winbooks Export',
-    'version': '10.0.1.1.0',
+    'version': '13.0.1.1.0',
     'depends': [
         'account',
     ],
@@ -45,5 +45,4 @@
         'views/account_winbooks_export_menu.xml',
     ],
     'installable': True,
-    'active': False,
 }

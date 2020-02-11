@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* account_winbooks_export
+# 	* account_winbooks_export
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0-20181015\n"
+"Project-Id-Version: Odoo Server 13.0-20200205\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 06:58+0000\n"
-"PO-Revision-Date: 2019-07-16 06:58+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2020-02-11 10:50+0000\n"
+"PO-Revision-Date: 2020-02-11 10:50+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,496 +16,495 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:97
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:316
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ACCOUNTGL"
-msgstr "ACCOUNTGL"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:317
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ACCOUNTRP"
-msgstr "ACCOUNTRP"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:210
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ADRESS1"
-msgstr "ADRESS1"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:211
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ADRESS2"
-msgstr "ADRESS2"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:100
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:325
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "AMOUNT"
-msgstr "AMOUNT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:101
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:326
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "AMOUNTEUR"
-msgstr "AMOUNTEUR"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:112
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "AMOUNTGL"
-msgstr "AMOUNTGL"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Accounting Winbooks Export"
-msgstr "Accounting Winbooks Export"
+msgstr "Comptabilité Winbooks Exportation"
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Analytic Entries"
-msgstr "Écritures analytiques"
+msgstr "Entrées analytiques"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:218
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "BNKACCNT"
-msgstr "BNKACCNT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:95
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:318
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "BOOKYEAR"
-msgstr "BOOKYEAR"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:223
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CATEGORY"
-msgstr "CATEGORY"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:224
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CENTRAL"
-msgstr "CENTRAL"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:220
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CITY"
-msgstr "CITY"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:208
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CIVNAME1"
-msgstr "CIVNAME1"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:209
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CIVNAME2"
-msgstr "CIVNAME2"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:99
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:323
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "COMMENT"
-msgstr "COMMENT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:324
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "COMMENTEXT"
-msgstr "COMMENTEXT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:213
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "COUNTRY"
-msgstr "COUNTRY"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_data
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__data
 msgid "CSV"
-msgstr "CSV"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:332
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CUREURBASE"
-msgstr "CUREURBASE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:330
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CURRAMOUNT"
-msgstr "CURRAMOUNT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:335
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CURRATE"
-msgstr "CURRATE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:331
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "CURRCODE"
-msgstr "CURRCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Close"
-msgstr "Fermer"
+msgstr "Fermé"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_company_id
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__company_id
 msgid "Company"
-msgstr "Société"
+msgstr "Entreprise"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_create_uid
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_create_date
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__create_date
 msgid "Created on"
 msgstr "Créé le"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:98
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:320
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DATE"
-msgstr "DATE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:321
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DATEDOC"
-msgstr "DATEDOC"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:92
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:311
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DBKCODE"
-msgstr "DBKCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:93
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:312
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DBKTYPE"
-msgstr "DBKTYPE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:221
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DEFLTPOST"
-msgstr "DEFLTPOST"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:94
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:313
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DOCNUMBER"
-msgstr "DOCNUMBER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:113
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:314
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DOCORDER"
-msgstr "DOCORDER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:310
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DOCTYPE"
-msgstr "DOCTYPE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:322
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "DUEDATE"
-msgstr "DUEDATE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_display_name
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_date_to
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__date_to
 msgid "End Date"
 msgstr "Date de fin"
 
 #. module: account_winbooks_export
 #: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks_export
 msgid "Export"
-msgstr "Export"
+msgstr "Exportation"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_export_filename
-msgid "Export CSV Filename"
-msgstr "Export CSV Nom de fichier"
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__export_filename
+msgid "CSV Filename"
+msgstr "Nom de fichier CSV"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:217
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "FAXNUMBER"
-msgstr "FAXNUMBER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_id
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:110
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ISDOC"
-msgstr "ISDOC"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:106
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ISIMPORTED"
-msgstr "ISIMPORTED"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:105
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ISLOCKED"
-msgstr "ISLOCKED"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:104
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ISMATCHED"
-msgstr "ISMATCHED"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:107
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ISPOSITIVE"
-msgstr "ISPOSITIVE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Invoice Entries"
-msgstr "Invoice Entries"
+msgstr "Entrées de facture"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:222
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "LANG"
-msgstr "LANG"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:111
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "LINEORDER"
-msgstr "LINEORDER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export___last_update
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export____last_update
 msgid "Last Modified on"
-msgstr "Dernière Modification le"
+msgstr "Dernière modification le"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_write_uid
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__write_uid
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_write_date
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
 
 #. module: account_winbooks_export
 #: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks_list
 msgid "List"
-msgstr "List"
+msgstr "Liste"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:102
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:337
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "MATCHNO"
-msgstr "MATCHNO"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:109
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "MEMOTYPE"
-msgstr "MEMOTYPE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:206
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "NAME1"
-msgstr "NAME1"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:207
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "NAME2"
-msgstr "NAME2"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:204
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "NUMBER"
-msgstr "NUMBER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:103
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "OLDDATE"
-msgstr "OLDDATE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:315
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "OPCODE"
-msgstr "OPCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:215
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "PAYCODE"
-msgstr "PAYCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:96
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:319
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "PERIOD"
-msgstr "PERIOD"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Partner Entries"
-msgstr "Partner Entries"
+msgstr "Entrées partenaires"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:336
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "REMINDLEV"
-msgstr "REMINDLEV"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "Report"
 msgstr "Rapport"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:108
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "SITEMP"
-msgstr "SITEMP"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export_date_from
+#: model:ir.model.fields,field_description:account_winbooks_export.field_account_winbooks_export__date_from
 msgid "Start Date"
 msgstr "Date de début"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:216
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "TELNUMBER"
-msgstr "TELNUMBER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:205
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "TYPE"
-msgstr "TYPE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:327
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATBASE"
-msgstr "VATBASE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:212
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATCAT"
-msgstr "VATCAT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:225
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:328
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATCODE"
-msgstr "VATCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:329
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:334
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATIMPUT"
-msgstr "VATIMPUT"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:214
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATNUMBER"
-msgstr "VATNUMBER"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:333
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "VATTAX"
-msgstr "VATTAX"
+msgstr ""
 
 #. module: account_winbooks_export
 #: model:ir.model,name:account_winbooks_export.model_account_winbooks_export
 msgid "WINBOOKS Export Accounting"
-msgstr "WINBOOKS Export Accounting"
+msgstr "WINBOOKS Exportation Comptable"
 
 #. module: account_winbooks_export
 #: model:ir.ui.menu,name:account_winbooks_export.menu_account_winbooks
 msgid "Winbooks"
-msgstr "Winbooks"
+msgstr ""
 
 #. module: account_winbooks_export
 #: model:ir.actions.act_window,name:account_winbooks_export.action_account_winbooks_export
 msgid "Winbooks Export"
-msgstr "Winbooks Export"
+msgstr "Winbooks Exportation"
 
 #. module: account_winbooks_export
 #: model:ir.actions.act_window,name:account_winbooks_export.action_account_winbooks_list
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_list
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_list
 msgid "Winbooks Export List"
-msgstr "Winbooks Export List"
+msgstr "Liste d'export Winbooks"
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:219
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ZIPCODE"
-msgstr "ZIPCODE"
+msgstr ""
 
 #. module: account_winbooks_export
-#: code:addons/account_winbooks_export/models/account_winbooks_export.py:114
+#: code:addons/account_winbooks_export/models/account_winbooks_export.py:0
 #, python-format
 msgid "ZONANA1"
-msgstr "ZONANA1"
+msgstr ""
 
 #. module: account_winbooks_export
-#: model:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
+#: model_terms:ir.ui.view,arch_db:account_winbooks_export.account_winbooks_export_wizard
 msgid "or"
 msgstr "ou"
-

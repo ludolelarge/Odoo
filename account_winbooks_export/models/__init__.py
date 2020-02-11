@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-import account_winbooks_export
+from . import account_winbooks_export

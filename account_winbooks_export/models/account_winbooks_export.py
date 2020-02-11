@@ -2,18 +2,17 @@
 
 import itertools
 import tempfile
-from cStringIO import StringIO
+from io import StringIO, BytesIO
 import base64
 
 import csv
 import codecs
 
-from odoo import fields
-from odoo.osv import orm
+from odoo import fields,models
 from odoo.tools.translate import _
 
 
-class AccountUnicodeWriter(object):
+class AccountingWriter(object):
 
     """
     A CSV writer which will write rows to CSV file "f",
@@ -30,57 +29,51 @@ class AccountUnicodeWriter(object):
 
     def writerow(self, row):
         # we ensure that we do not try to encode none or bool
-        row = (x or u'' for x in row)
-
-        encoded_row = [
-            c.encode("utf-8") if isinstance(c, unicode) else c for c in row]
-
-        self.writer.writerow(encoded_row)
+        row = (x or '' for x in row)
+        self.writer.writerow(row)
         # Fetch UTF-8 output from the queue ...
         data = self.queue.getvalue()
-        data = data.decode("utf-8")
-        # ... and reencode it into the target encoding
+        # ... and reencode it into the target encoding as BytesIO
         data = self.encoder.encode(data)
         # write to the target stream
         self.stream.write(data)
-        # empty queue
-        self.queue.truncate(0)
+        # seek() or truncate() have side effect then we reinitialize StringIO
+        # https://stackoverflow.com/questions/4330812/how-do-i-clear-a-stringio-object
+        self.queue = StringIO()
 
     def writerows(self, rows):
         for row in rows:
             self.writerow(row)
+        # https://docs.python.org/3/library/io.html#io.IOBase.close
+        self.queue.close()
 
-
-class AccountWINBOOKSExport(orm.TransientModel):
+class AccountWINBOOKSExport(models.TransientModel):
     _name = 'account.winbooks.export'
     _description = 'WINBOOKS Export Accounting'
     
     data = fields.Binary('CSV', readonly=True)
-    export_filename = fields.Char('Export CSV Filename', size=128, default='export.csv')
+    export_filename = fields.Char('CSV Filename', size=128, default='export.csv')
 
     company_id = fields.Many2one('res.company', string='Company', readonly=True, default=lambda self: self.env.user.company_id)
     date_from = fields.Date(string='Start Date', required=True)
     date_to = fields.Date(string='End Date', required=True)
     
     def action_manual_export_analytic_entries(self):
+        self.ensure_one()
         self.export_filename = 'ANT.txt'
         rows = self.get_data("analytic_entries")
-        with tempfile.TemporaryFile() as file_data:
-            writer = AccountUnicodeWriter(file_data)
+        file_data = BytesIO()
+        try:
+            writer = AccountingWriter(file_data)
             writer.writerows(rows)
-            with tempfile.TemporaryFile() as base64_data:
-                file_data.seek(0)
-                base64.encode(file_data, base64_data)
-                base64_data.seek(0)
-                self.env.cr.execute("""
-                UPDATE account_winbooks_export
-                SET data = %s
-                WHERE id = %s""", (base64_data.read(), self.ids[0]))
+            file_value = file_data.getvalue()
+            self.write({'data': base64.encodestring(file_value)})
+        finally:
+            file_data.close()
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'account.winbooks.export',
             'view_mode': 'form',
-            'view_type': 'form',
             'res_id': self.id,
             'views': [(False, 'form')],
             'target': 'new',
@@ -149,7 +142,7 @@ class AccountWINBOOKSExport(orm.TransientModel):
                 ELSE account_move_line.name
             END as COMMENT,
             '' as AMOUNT,
-            round(account_move.amount,2) as AMOUNTEUR,
+            round(account_move.amount_total,2) as AMOUNTEUR,
             '' as MATCHNO,
             '' as OLDDATE,
             '' as ISMATCHED,
@@ -160,7 +153,7 @@ class AccountWINBOOKSExport(orm.TransientModel):
             '' as MEMOTYPE,
             '' as ISDOC,
             '' as LINEORDER,
-            round(account_move.amount,2) as AMOUNTGL,
+            round(account_move.amount_total,2) as AMOUNTGL,
             '' as DOCORDER,
             account_analytic_account.code as ZONANA1
             FROM public.account_move_line
@@ -175,24 +168,21 @@ class AccountWINBOOKSExport(orm.TransientModel):
         return self.env.cr.fetchall()
     
     def action_manual_export_partner_entries(self):
+        self.ensure_one()
         self.export_filename = 'CSF.txt'
         rows = self.get_data("partner_entries")
-        with tempfile.TemporaryFile() as file_data:
-            writer = AccountUnicodeWriter(file_data)
+        file_data = BytesIO()
+        try:
+            writer = AccountingWriter(file_data)
             writer.writerows(rows)
-            with tempfile.TemporaryFile() as base64_data:
-                file_data.seek(0)
-                base64.encode(file_data, base64_data)
-                base64_data.seek(0)
-                self.env.cr.execute("""
-                UPDATE account_winbooks_export
-                SET data = %s
-                WHERE id = %s""", (base64_data.read(), self.ids[0]))
+            file_value = file_data.getvalue()
+            self.write({'data': base64.encodestring(file_value)})
+        finally:
+            file_data.close()
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'account.winbooks.export',
             'view_mode': 'form',
-            'view_type': 'form',
             'res_id': self.id,
             'views': [(False, 'form')],
             'target': 'new',
@@ -253,7 +243,7 @@ class AccountWINBOOKSExport(orm.TransientModel):
             res_partner.vat as VATNUMBER,
             '' as PAYCODE,
             res_partner.phone as TELNUMBER,
-            res_partner.fax as FAXNUMBER,
+            '' as FAXNUMBER,
             res_bank.bic as BNKACCNT,
             res_partner.zip as ZIPCODE,
             res_partner.city as CITY,
@@ -281,24 +271,21 @@ class AccountWINBOOKSExport(orm.TransientModel):
         return self.env.cr.fetchall()
     
     def action_manual_export_invoice_entries(self):
+        self.ensure_one()
         self.export_filename = 'ACT.txt'
         rows = self.get_data("invoice_entries")
-        with tempfile.TemporaryFile() as file_data:
-            writer = AccountUnicodeWriter(file_data)
+        file_data = BytesIO()
+        try:
+            writer = AccountingWriter(file_data)
             writer.writerows(rows)
-            with tempfile.TemporaryFile() as base64_data:
-                file_data.seek(0)
-                base64.encode(file_data, base64_data)
-                base64_data.seek(0)
-                self.env.cr.execute("""
-                UPDATE account_winbooks_export
-                SET data = %s
-                WHERE id = %s""", (base64_data.read(), self.ids[0]))
+            file_value = file_data.getvalue()
+            self.write({'data': base64.encodestring(file_value)})
+        finally:
+            file_data.close()
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'account.winbooks.export',
             'view_mode': 'form',
-            'view_type': 'form',
             'res_id': self.id,
             'views': [(False, 'form')],
             'target': 'new',
@@ -400,9 +387,9 @@ class AccountWINBOOKSExport(orm.TransientModel):
             round(account_move_line.balance, 2) as AMOUNTEUR,
             CASE 
                 WHEN account_account.code LIKE '40%%' or account_account.code LIKE '44%%'
-                    THEN round(account_move.amount / 1.21, 2)
+                    THEN round(account_move.amount_total / 1.21, 2)
                 WHEN account_account.code LIKE '451%%' or account_account.code LIKE '411%%'
-                    THEN round(account_move.amount / 1.21, 2)
+                    THEN round(account_move.amount_total / 1.21, 2)
             END as VATBASE,    
             CASE
                 WHEN account_account.code LIKE '451%%'
@@ -431,7 +418,7 @@ class AccountWINBOOKSExport(orm.TransientModel):
         return self.env.cr.fetchall()
 
     def get_data(self, result_type):
-        
+        self.ensure_one()
         data = {}
         get_header_func = getattr(self, ("_get_header_%s" % (result_type)))
         get_rows_func = getattr(self, ("_get_rows_%s" % (result_type)))
@@ -440,7 +427,10 @@ class AccountWINBOOKSExport(orm.TransientModel):
         date_from = data['form']['date_from']
         date_to = data['form']['date_to']
             
-        rows = itertools.chain(
-                               get_rows_func(date_from,date_to)
-                               )
+        #rows = itertools.chain(
+        #                       get_rows_func(date_from,date_to)
+        #                       )
+        rows = itertools.chain((get_header_func(),),
+                               get_rows_func(date_from,date_to))
         return rows
+    
