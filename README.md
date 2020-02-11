@@ -5,3 +5,4 @@ Odoo custom addons 13.0
 * V10 - truck_mgmt
 * V10 - employee_vehicule¨request
 * V10 - employee_product_request
+* V10 - efficieny_mgmt
